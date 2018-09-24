@@ -17,6 +17,10 @@
     padding-top: 25vh;
     padding-bottom: 25vh;   
     margin: 0;
+
+  
+
+
 }
 
 .jumbotron h1 {
@@ -24,7 +28,10 @@
     letter-spacing: 3px;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
+
+   
 }
+
 
 .jumbotron h2 {
     color: #e9e9e9;
@@ -35,7 +42,7 @@
     margin: 0 auto;
     width: 100%;
     /*height: 100%;*/
-    background-image: url(../images/q3.jpg);
+    background-image: url(../images/q4.jpg);
     background-size: cover;
 }
 
@@ -46,5 +53,65 @@
 #landing-btn:hover {
     color: #141414;
     font-weight: 700;
+}
+
+img {
+    height: 600px;
+    width: 600px;
+}
+#cap3 {
+    color: black;
+}
+
+#cap2 {
+    color: green;
+}
+
+.body-contact{
+   /* background-color: #141414;*/
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/q3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contact {
+    color: white; 
+}
+
+.fas {
+    color: blue;
+}
+
+#fb-icon {
+    color: #1565c0;
+}
+
+#twitter-icon {
+    color: #4099ff;
+}
+
+#google-icon {
+    color: #ff1d47;
+}
+
+#insta-icon {
+    color: #dd2a7b;
+}
+
+#fullname{
+    background: transparent;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+.container {
+    background-color: rgba(128, 128, 128, 0.50);
 }
 

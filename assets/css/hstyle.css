@@ -1,0 +1,196 @@
+body {
+	margin: 0px;
+
+}
+nav, #healines, #news, #editorial, #gallery, #researches, #contact, footer { 
+	padding: 30px;
+	box-sizing: border-box;
+
+}
+
+nav {
+	background: #0df969;
+	width: 200px;
+	position: fixed; 
+	height: 100%;
+
+}
+
+main {
+	background: lightgrey;
+	margin-left: 200px;
+	
+}
+
+/*vh is viewport height*/
+#headlines {
+	height: 100vh;
+	background-image: url(../images/q4.jpg);
+	background-repeat: no-repeat;
+	min-height: 300px;
+	background-size: cover;
+	color: #ffffff;
+
+}
+
+.column {
+
+	border: 5px solid white;
+	text-align: center;
+	width: 31.33%;
+	margin: 1.16px;
+	padding: 40px;
+	float: left;
+	background-color: transparent;
+/*	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+
+
+}
+
+#about{
+	/*height: 100vh;*/
+	background: indianred;
+
+	min-height: 300px;
+	background-size: cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-image: url(../image/header.jpg);
+}
+
+
+#news {
+	/*height: 100vh;*/
+	background: midnightblue;
+	color: #ffffff;
+	min-height: 300px;
+	height: 100vh;
+}
+
+
+#editorial {
+	height: 100vh;
+	background: crimson;
+}
+
+}
+
+.body-contact{
+   /* background-color: #141414;*/
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/q3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contact {
+    color: white; 
+}
+
+.fas {
+    color: blue;
+}
+
+#fb-icon {
+    color: #1565c0;
+}
+
+#twitter-icon {
+    color: #4099ff;
+}
+
+#google-icon {
+    color: #ff1d47;
+}
+
+#insta-icon {
+    color: #dd2a7b;
+}
+
+#fullname{
+    background: transparent;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+footer {
+	background: green;
+	margin-left: 200px;
+	min-height: 100px;
+
+}
+
+ul > li {
+	list-style: none;
+	/*background: lightblue;*/
+	margin-bottom: 2px;
+	line-height: 48px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.logo {
+	width: 140px;
+	height: 140px;
+	background: darkgrey;
+	margin: auto;
+}
+
+img {
+	width: 140px;
+	height: 140px;
+}
+
+img[alt*="service"]{
+	border: 1px solid white;
+	width: 60px;
+	height: 60px;
+	display: block;
+	float: left;
+
+}
+
+.column {
+	float: left;
+	border: 1px solid white;
+	box-sizing: border-box;
+	margin-left: 1.16%;
+	width: 31%;
+
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img[alt*="service"]~p{
+	overflow: hidden;
+
+}
+
+.no-top-margin{
+	margin: 0px;
+}
+
+#gallery {
+
+	height: 100vh;
+	min-height: 100px;
+	background-color: #87c735;
+}
+
+
+}
+

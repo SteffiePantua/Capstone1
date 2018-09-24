@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.jumbotron {
+
+    /*style for about us jumbotron*/
+background-image: url(../images/header.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-color: #141414;
+height: 90vh;
+border-radius: 0;
+margin-bottom: 0;
+
+}
+
+
+#landing-about{
+font-family: 'Montserrat', sans-serif;
+color: #141414;
+font-size: 5em;
+padding-top: 20vh;
+letter-spacing: 5px;
+
+}
+
+.fadeIn {
+    animation-duration: 5s;
+}
+
+#mission {
+    height: 100%;
+    background-color: #dfdd19;
+    color: #141414;
+}
+
+.about-tags {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#vision {
+    height: 100%;
+    background-color: #b3cd41;
+    color: #141414;
+}
+#sign {
+    color: red;
+}
+
+#services {
+    height: 100%;
+    background-color: #7ebc57;
+    color: #141414;
+}
+
+img[alt*="service"]{
+    border: 1px solid white;
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+
+
+}
+
+.column {
+    float: left;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-left: 1.16%;
+    width: 31%;
+    padding: 10px;
+    display: block;
+
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img[alt*="service"]~p{
+    overflow: hidden;
+
+}
+
+footer{
+    height: 100%;
+    background-color: #2eac66;
+    color: #141414;
