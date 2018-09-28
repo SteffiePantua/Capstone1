@@ -68,8 +68,6 @@ img[alt*="service"]{
     height: 80px;
     display: block;
     float: left;
-
-
 }
 
 .column {
@@ -116,4 +114,4 @@ margin-bottom: 0;
 */
 }
     } 
-    }
+    
