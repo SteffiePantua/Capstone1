@@ -1,18 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-	margin: 0px;
-
-}
-nav, #healines, #news, #editorial, #gallery, #researches, #contact, footer { 
-	padding: 30px;
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/q4.jpg);
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	left: 0;
 
 }
-
-nav {
-	background: #0df969;
-	width: 200px;
-	position: fixed; 
-	height: 100%;
+nav, #healines, #news, #editorial, #feature, footer { 
+	/*padding: 30px;*/
+	box-sizing: border-box;
 
 }
 
@@ -25,109 +31,118 @@ main {
 /*vh is viewport height*/
 #headlines {
 	height: 100vh;
-	background-image: url(../images/q4.jpg);
-	background-repeat: no-repeat;
-	min-height: 300px;
-	background-size: cover;
 	color: #ffffff;
+	max-width: 100vh;
 
 }
 
-.column {
-
-	border: 5px solid white;
-	text-align: center;
-	width: 31.33%;
-	margin: 1.16px;
-	padding: 40px;
-	float: left;
+.card-text {
+	color: black;
 	background-color: transparent;
-/*	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
-
-
 }
 
-#about{
-	/*height: 100vh;*/
-	background: indianred;
-
-	min-height: 300px;
-	background-size: cover;
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-image: url(../image/header.jpg);
-}
-
-
+/*edits to News*/
 #news {
-	/*height: 100vh;*/
-	background: midnightblue;
+	background: #dfdd19;
 	color: #ffffff;
-	min-height: 300px;
+	/*min-height: 300px;*/
 	height: 100vh;
+	width: 100%
+	opacity: 0.25;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  }
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.50);
+  overflow: scroll;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.50);
+  overflow: scroll;
+}
+
+.col-lg-6:hover .overlay1 {
+  opacity: 1;
+}
+
+.col-lg-6:hover .overlay2 {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  text-align: justify;
+
+}
+
+.text >p {
+	text-indent: 50px;
+	font-size: 14px;
+}
+
+.card-body{
+
+	min-height: 100px;
+}
+/*end of news*/
 
 #editorial {
 	height: 100vh;
-	background: crimson;
+	background: transparent;
+	width: 100%;
 }
-
-}
-
-.body-contact{
-   /* background-color: #141414;*/
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/q3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#contact {
-    color: white; 
-}
-
-.fas {
-    color: blue;
-}
-
-#fb-icon {
-    color: #1565c0;
-}
-
-#twitter-icon {
-    color: #4099ff;
-}
-
-#google-icon {
-    color: #ff1d47;
-}
-
-#insta-icon {
-    color: #dd2a7b;
-}
-
-#fullname{
-    background: transparent;
-}
-
-::placeholder {
-    color: white;
+.image {
+	height: 100%;
 }
 
 
-footer {
-	background: green;
-	margin-left: 200px;
-	min-height: 100px;
+
+.banner{
+	text-align: justify;
+	font-size: 40px;
+	font-family: 'Notable', sans-serif;
+	letter-spacing: 20px;
+	color: white;
+	/*max-width: 100%*/
 
 }
+
+
 
 ul > li {
 	list-style: none;
@@ -146,51 +161,35 @@ ul > li {
 	margin: auto;
 }
 
-img {
-	width: 140px;
-	height: 140px;
+h2 {
+	color: white;
 }
 
-img[alt*="service"]{
-	border: 1px solid white;
-	width: 60px;
-	height: 60px;
-	display: block;
-	float: left;
-
-}
 
 .column {
 	float: left;
-	border: 1px solid white;
-	box-sizing: border-box;
-	margin-left: 1.16%;
-	width: 31%;
+	
+		
 
 }
 
-.clear:after {
-	content: "";
-	display: block;
-	clear: both;
+.card-img-top {
+	height: 200px;
 }
 
-img[alt*="service"]~p{
-	overflow: hidden;
 
+#feature{
+	background: #dfdd19;
 }
 
 .no-top-margin{
 	margin: 0px;
 }
 
-#gallery {
 
-	height: 100vh;
-	min-height: 100px;
-	background-color: #87c735;
+/*.header {
+	width: 100%;
 }
+*/
 
-
-}
 

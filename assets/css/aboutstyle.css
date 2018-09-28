@@ -32,6 +32,10 @@ letter-spacing: 5px;
     animation-duration: 5s;
 }
 
+#history {height: 100%;
+    background-color: #b3cd41;
+    color: #141414;}
+
 #mission {
     height: 100%;
     background-color: #dfdd19;
@@ -94,3 +98,5 @@ footer{
     height: 100%;
     background-color: #2eac66;
     color: #141414;
+}
+   

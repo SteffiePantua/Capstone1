@@ -27,43 +27,45 @@
   </head>
 
   <body class="body-contact">
-  <nav class="navbar navbar-expand-lg navbar-primary bg-transparent mb-5 ">
-    
-    <i class="fas fa-map-marker-alt fa-lg fb"></i>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Contact
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Editor in Chief</a>
-            <a class="dropdown-item" href="#">Managing Editor</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Publication Adviser</a>
-          </div>
+
+<div id="contact" class="container-fluid px-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top mb-5">
+    <a href="#" class="navbar-brand"> The Quantum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav"><span class="navbar-toggler-icon"></span>
+    </button> <!-- appears on mobile view -->
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class="nav-link" href="home.html" target="_self">Headlines</a>
         </li>
-        
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-      </form>
-    </div>
-</nav>
+         <li class="nav-item">
+          <a class="nav-link" href="gallery.html" target="_self">Gallery</a>
+        </li>
 
-<div id="contact" class="container">
-  <div class="row">
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html" target="_self">Contact</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="about.html" target="_self">About</a>
+        </li>
+      </ul>
+    </div>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+   </form>
+  </nav> <!-- end of nav -->
+ 
+  <div class="row mb-5">
       <div class="col-lg-1"></div>
-         <div class="col-lg-5">
+         <div class="col-lg-5 col-md-12 col-sm-12">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.0148398540246!2d121.00830726525506!3d14.598230239804009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbaaa357c5585b8c2!2sPolytechnic+University+of+the+Philippines!5e0!3m2!1sen!2sph!4v1537353887311" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div> <!-- for the google map -->
 
-        <div class="col-lg-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
         <!-- contact form -->
           <form class="form-horizontal">
             <legend>Contact Us</legend>
@@ -71,52 +73,48 @@
 
           <div class="form-group">
 
-            <label class="col-lg-4" for="fullname">Full Name</label>
+            <label class="col-lg-4 col-md-12 col-sm-12" for="fullname">Full Name</label>
             <input id="fullname" name="fullname" placeholder="Your name here" class="form-control" type="text"></input>
 
           </div>
 
           <div class="form-group">
 
-            <label class="col-lg-4" for="email">Email</label>
-            <input id="email" name="email" placeholder="xxx@gmail.com" class="form-control" type="email"></input>
+            <label class="col-lg-4 col-md-12 col-sm-12" for="email">Email</label>
+            <input id="email" name="email" placeholder="xxx@gmail.com" class="form-control" type="email"><input>
+
 
           </div>
 
           <div class="form-group">
 
-            <label class="col-lg-4" for="email">Message</label>
+            <label class="col-lg-4 col-md-12 col-sm-12" for="email">Message</label>
             <textarea class="form-control" id="message" name="message" placeholder="Type your message here"></textarea>
 
           </div>
 
           <div class="form-group">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <button id="submit" name="submit" class="btn btn-primary">Submit</button>
             </div>
           </div>
-
-
         </div> <!-- for the contact port -->
       <div class="col-lg-1"></div>
-
   </div>
 </div>
 
-<div class="container ">
-  <div class="row">
+  <div class="row" id="social">
     <div class="col-lg-1"></div>
       <div class="col-lg-5">
-        <i class="fab fa-facebook-square fa-5x " id="fb-icon"></i>
-        <i class="fab fa-twitter-square fa-5x d-block" id="twitter-icon"></i>
+        <i class="fab fa-facebook-square fa-2x " id="fb-icon"> The Pup Physics Society</i>
+        <i class="fab fa-twitter-square fa-2x d-block" id="twitter-icon"> @pupphysoc</i>
       </div>
       <div class="col-lg-5">
-        <i class="fab fa-google-plus-square fa-5x" id="google-icon"></i>
-        <i class="fab fa-instagram fa-5x d-block" id="insta-icon"></i>
+        <i class="fab fa-google-plus-square fa-2x" id="google-icon"> Pupphysics.com</i>
+        <i class="fab fa-instagram fa-2x d-block" id="insta-icon"> @pupphysoc</i>
       </div>
-
     <div class="col-lg-1"></div>
   </div>
- </div> 
+</div>
   </body>
 </html>

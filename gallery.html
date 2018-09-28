@@ -13,6 +13,9 @@
     <!-- lightbox css -->
     <link rel="stylesheet" type="text/css" href="assets/css/lightbox.css">
 
+    <!-- link to fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <!-- link to css -->
 
     <link rel="stylesheet" type="text/css" href="assets/css/galstyle.css">
@@ -30,41 +33,40 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav> <!-- end of nav -->
+  <div class="container-fluid px-0"> <!-- nested fluid grid -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <a href="#" class="navbar-brand"> The Quantum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav"><span class="navbar-toggler-icon"></span>
+        </button> <!-- appears on mobile view -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+              <a class="nav-link" href="home.html" target="_self">Headlines</a>
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="gallery.html" target="_self">Gallery</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" target="_self">Contact</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="about.html" target="_self">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+       </form>
+      </div>
+
+      </nav> <!-- end of nav -->
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -75,7 +77,7 @@
 
     <div class="carousel-inner mb-5">
       <div class="carousel-item slider">
-        <img  class="d-block w-100" src="assets/images/q5.jpg" alt="First slide">
+        <img  class="d-block w-100" src="assets/images/gal1.jpg" alt="First slide">
         <div id="cap1" class="carousel-caption d-none d-md-block">
         <h5>The Quantum</h5>
         <p>Official Publication of the PUP Physics Society</p>
@@ -83,7 +85,7 @@
         
       </div>
       <div class="carousel-item slider">
-        <img  class="d-block w-100" src="assets/images/q5.jpg" alt="Second slide">
+        <img  class="d-block w-100" src="assets/images/gal2.jpg" alt="Second slide">
         <div id="cap2" class="carousel-caption d-none d-md-block">
         <h5>The Quantum</h5>
         <p>Official Publication of the PUP Physics Society</p>
@@ -91,7 +93,7 @@
       </div> <!-- image 2 -->
 
       <div class="carousel-item active slider">
-        <img class="d-block w-100" src="assets/images/q5.jpg" alt="Third slide">
+        <img class="d-block w-100" src="assets/images/gal3.jpg" alt="Third slide">
         <div id="cap3" class="carousel-caption d-none d-md-block">
         <h5>The Quantum</h5>
         <p>Official Publication of the PUP Physics Society</p>
@@ -110,26 +112,20 @@
     </a> <!-- right arrow -->
   </div>
 
-  <div class="container"> <!-- nested fluid grid -->
-    <div class="row">
+    <div class="row" id="top">
       <div class="col-lg-1"></div>
-      <div class="col-lg-10">
+      <div class="col-lg-10 col-md-12 col-sm-12">
         <!-- inner row -->
         <div class="row mb-5">
         <!-- start of card -->
-          <div class="col-lg-4"> 
+          <div class="col-lg-3 col-md-12 col-sm-12"> 
             <div class="card">
-              <img class="card-img-top" src="assets/images/nuke.jpg" height="175px">
+              <img class="card-img-top" src="assets/images/reynold.jpg" height="175px">
               <div class="card-body">
                 <div class="card-title">
-                  <h5 class="card-title">First Image</h5>
+                  <h5 class="card-title">Reynold Luna</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Adviser
                   </p>
                 </div>
               </div>
@@ -138,20 +134,15 @@
           <!-- end of card -->
 
           <!-- start of card -->
-          <div class="col-lg-4"> 
+          <div class="col-lg-3 col-md-12 col-sm-12"> 
             <div class="card">
-              <img class="card-img-top" src="assets/images/nuke.jpg" height="175px">
+              <img class="card-img-top" src="assets/images/jeffrey.jpg" height="175px">
 
               <div class="card-body">
                 <div class="card-title">
-                  <h5 class="card-title">2nd Image</h5>
+                  <h5 class="card-title">Jeffrey C. De Vero</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Alumni, Content Writer
                   </p>
                 </div>
               </div>
@@ -160,20 +151,31 @@
           <!-- end of card -->
 
           <!-- start of card -->
-          <div class="col-lg-4"> 
+          <div class="col-lg-3 col-md-12 col-sm-12"> 
             <div class="card">
-              <img class="card-img-top" src="assets/images/nuke.jpg" height="175px">
+              <img class="card-img-top" src="assets/images/ruben.png" height="175px">
 
               <div class="card-body">
                 <div class="card-title">
-                  <h5 class="card-title">3rd Image</h5>
+                  <h5 class="card-title">Ruben Madridejos</h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   Editor in Chief
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of card -->
+          <!-- start of card -->
+          <div class="col-lg-3 col-md-12 col-sm-12"> 
+            <div class="card">
+              <img class="card-img-top" src="assets/images/unico.jpg" height="175px">
+
+              <div class="card-body">
+                <div class="card-title">
+                  <h5 class="card-title">Unico Bautista</h5>
+                  <p class="card-text">
+                    Assistant Editor- in Chief
                   </p>
                 </div>
               </div>
@@ -183,90 +185,13 @@
         </div>  
         <!-- end of inner row -->
 
-        <!-- my 2nd row -->
-        <div class="row mb-5">
-          <!-- start of card -->
-          <div class="col-lg-4"> 
-            <div class="card">
-              <img class="card-img-top" src="assets/images/nuke.jpg" height="175px">
-              <div class="card-body">
-                <div class="card-title">
-                  <h5 class="card-title">First Image</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end of card -->
-
-          <!-- start of card -->
-          <div class="col-lg-4"> 
-            <div class="card">
-              <img class="card-img-top" src="assets/images/nuke.jpg" height="175px">
-
-              <div class="card-body">
-                <div class="card-title">
-                  <h5 class="card-title">2nd Image</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end of card -->
-
-          <!-- start of card -->
-          <div class="col-lg-4"> 
-            <div class="card">
-              <img class="card-img-top" src="assets/images/nuke.jpg" height="175px">
-
-              <div class="card-body">
-                <div class="card-title">
-                  <h5 class="card-title">3rd Image</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end of card -->
-        </div>
-      </div>
-      <!-- end of 2nd row -->
+        
       <div>
-        <iframe class="myframe" scrolling="no" name="gallery" ></iframe>
-        <a href="assets/images/q5.jpg" target="gallery">
-          <img src="assets/images/q5.jpg" height="50" width="50" class="img-thumbnail">
-        </a>
-        <a href="assets/images/q6.jpg" target="gallery">
-          <img src="assets/images/q6.jpg" height="50" width="50" class="img-thumbnail">
-        </a>
-        <a href="assets/images/q7.jpg" target="gallery">
-          <img src="assets/images/q7.jpg" height="50" width="50" class="img-thumbnail">
-        </a>
+        
         <!-- lightbox -->
-        <a href="assets/images/nuke.jpg" data-lightbox="lb" 
-        data-title="Nuclear Bomb">
-          <img fadeInduration="400" height="50" width="50" src="assets/images/nuke.jpg">
+        <a href="assets/images/gal4.jpg" data-lightbox="lb" 
+        data-title="Former CS Chairperson">
+          <img fadeInduration="400" height="50" width="50" src="assets/images/gal4.jpg">
         </a>
         <a href="assets/images/PhySoc.jpg" data-lightbox="lb" 
         data-title="Official Logo">
@@ -278,10 +203,18 @@
         </a>
 
       </div> <!-- end of col-lg-10 -->
-
-      <div class="col-lg-1"></div>
     </div>
+    <div class="col-lg-1"></div>
+
+
   </div>
+
+    <div class="card-footer bg-success border-success mt-5 ">
+      <div class="back">
+      <small>The Quantum &copy; 2018</small> <a href="#top">Back to Top</a>
+      </div>
+    </div> 
+
   
    
 </body>
