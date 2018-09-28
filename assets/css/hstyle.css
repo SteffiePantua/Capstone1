@@ -193,3 +193,8 @@ h2 {
 */
 
 
+@media only screen and (max-width: 420px) {
+	.text-center {
+		font-size: .65em;
+	} 
+	}
