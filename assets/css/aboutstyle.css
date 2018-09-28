@@ -99,4 +99,21 @@ footer{
     background-color: #2eac66;
     color: #141414;
 }
-   
+   @media only screen and (max-width: 420px) {
+    .jumbotron {
+
+    /*style for about us jumbotron*/
+background-image: url(../images/header.jpg);
+position: relative;
+max-width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+/*background-color: #141414;*/
+height: auto;
+width: auto;
+/*border-radius: 0;
+margin-bottom: 0;
+*/
+}
+    } 
+    }
